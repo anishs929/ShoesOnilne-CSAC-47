@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="ShoesWebApp.AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title> Shoes Online</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="Style.css" />
+    <script type="text/javascript" src="js.js"></script>
+    <style>
+        ul {
+  list-style-type: none;
+  margin-top:0 ;
+  padding: 0;
+  overflow: hidden;
+  background-color: #990000;
+  opacity:0.6;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #990000;
+}
+
+.active {
+  background-color: #990000;
+}
+        .header {
+            height: 2px;
+        }
+        .footer{
+           
+            background-color: #990000;
+            color:white;
+            border-radius:5px 5px 5px 5px;
+            
+
+
+        }
+        .footer h2{
+            padding:10px;
+            text-align:center
+               
+
+        }
+        .style1
+        {
+            width: 78%;
+        }
+        .style2
+        {
+            height: 115px;
+            font-size: 40px;
+            color: #00FFFF;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="height:700px">
+    <form id="form1" runat="server">
+    <div style="background-image:url('/images/jordon3.jpg');height:700px">
+    <div class="header">
+                &nbsp; </div>
+        <ul>
+            <li style= "font-size:20px;float:right"><a href="Admin_Login.aspx">Logout</a></li>
+            <li>
+             <li style="font-size:20px;float:right"><a href="AddCategory.aspx">Add Category</a></li>
+            <li>
+                <li style="font-size:20px;float:right"><a href="AddProduct.aspx">Add Product</a></li>
+            <li>
+            
+        <asp:Image ID="Image1" ImageUrl="~/images/slogo3.jpg" runat="server" Height="82px" Width="92px" />
+            
+</ul>
+        <span style="font-size:30px; color: white; cursor:pointer" onclick="openNavmenu()">&#9776;</span>
+        <div class="sidenavmenu" id="mySidenavmenu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="MainPage.aspx">Home Page</a>
+            <a href ="Product.aspx">Product Details</a>
+            <a href="Category.aspx">Category Details</a>
+            <a href="About.aspx">About Us</a>
+                
+
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlacebody" runat="server">
+            </asp:ContentPlaceHolder>
+        
+
+        
+        
+    </form>
+</body>
+</html>
