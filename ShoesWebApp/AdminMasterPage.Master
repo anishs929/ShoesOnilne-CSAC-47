@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="ShoesWebApp.AdminMasterPage" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="ShoesWebApp.AdminMasterPage" %>
 
 <!DOCTYPE html>
 
@@ -16,7 +16,7 @@
   padding: 0;
   overflow: hidden;
   background-color: #990000;
-  opacity:0.6;
+  opacity:0.9;
 }
 
 li {
@@ -74,17 +74,17 @@ li a:hover:not(.active) {
         }
     </style>
 </head>
-<body style="height:700px">
+<body style="background-image:url('/images/jordon3.jpg');height:850px">
     <form id="form1" runat="server">
-    <div style="background-image:url('/images/jordon3.jpg');height:700px">
+    
     <div class="header">
                 &nbsp; </div>
         <ul>
-            <li style= "font-size:20px;float:right"><a href="Admin_Login.aspx">Logout</a></li>
+            <li style= "font-size:20px; background-color:#660000 ;float:right"><a href="Admin_Login.aspx">Logout</a></li>
             <li>
-             <li style="font-size:20px;float:right"><a href="AddCategory.aspx">Add Category</a></li>
+             <li style="font-size:20px; background-color:#660000; float:right"><a href="AddCategory.aspx">Add Category</a></li>
             <li>
-                <li style="font-size:20px;float:right"><a href="AddProduct.aspx">Add Product</a></li>
+                <li style="font-size:20px; background-color:#660000; float:right" ><a href="AddProduct.aspx">Add Product</a></li>
             <li>
             
         <asp:Image ID="Image1" ImageUrl="~/images/slogo3.jpg" runat="server" Height="82px" Width="92px" />
